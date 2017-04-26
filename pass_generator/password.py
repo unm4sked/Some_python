@@ -1,4 +1,6 @@
+import os
 import random
+
 
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 upperalphabet = alphabet.upper()
