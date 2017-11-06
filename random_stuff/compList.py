@@ -62,3 +62,26 @@ for x in range(5):
 				res.append((x,y))
 
 print(res)
+
+#------------------------------------------------------------------------------
+
+x = open('plik.txt').readlines()
+print(x)
+
+x = [line.rstrip() for line in open('plik.txt').readlines()]
+print(x)
+
+x = [line.rstrip() for line in open('plik.txt')]
+print(x)
+
+x = list(map((lambda line: line.rstrip()),open('plik.txt')))
+print(x)
+
+#------------------------------------------------------------------------------
+
+listoftuple = [('Teodor',35,'dyrektor'),('Teofil',55,'prezes')]
+x = [age for (name,age,job) in listoftuple]
+print(x)
+
+x = list(map((lambda x: x[1]),listoftuple))
+print(x)
